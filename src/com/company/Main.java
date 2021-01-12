@@ -3,19 +3,35 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //двумерные массивы имеют вид {{12.5f,34.5f},{12.5f,34.5f}};
-        float[][] arr = new float[2][2];
-        arr[0][0] = 12.5f;
+        //public - модификатор доступа
+        //void - функция ничего не возвращает
+        //если она должна что-то возвращять, то передаем тип
+        //main - имя функции
+        //String[] args - параметры, их может не быть
 
-        char[][] arr2 = new char[3][3];
-        arr2[0][0] = 'C';
+        //int temp = func(2, 3);
+        //System.out.print(temp);
 
-        System.out.print(arr[0][0]);
-        char[][] arr3 = new char[3][3];
-        for (int i = 0; i < arr.length; i++){
-            arr3[i] = new char[3];
+        readArray();
+    }
+
+    public static int func (int a, int b){
+        int result = 1;
+        for (int i = 0; i < b; i++){
+            result *= a;
         }
-        arr3[0][0] = 'C';
-        System.out.print(arr3[0][0]);
+        return result;
+    }
+
+    public static int[] readArray (){
+        int[] arr;
+        int n;
+        Scanner in = new Scanner(System.in);
+        n = in.nextInt();
+        arr = new int[n];
+        for (int i = 0; i < n; i++){
+            arr[i] = in.nextInt();
+        }
+        return arr; //при объявлении  функции мы уже указали, что возвращаем массив
     }
 }
