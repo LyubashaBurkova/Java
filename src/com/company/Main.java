@@ -3,35 +3,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //public - модификатор доступа
-        //void - функция ничего не возвращает
-        //если она должна что-то возвращять, то передаем тип
-        //main - имя функции
-        //String[] args - параметры, их может не быть
+        //Person - объект
+        Person vitya = new Person(120, "Vitya");
+        //vitya.height = 160;
+        vitya.say("George");
+        System.out.println(vitya.name + "\'s height is " + vitya.height);
 
-        //int temp = func(2, 3);
-        //System.out.print(temp);
-
-        readArray();
-    }
-
-    public static int func (int a, int b){
-        int result = 1;
-        for (int i = 0; i < b; i++){
-            result *= a;
-        }
-        return result;
-    }
-
-    public static int[] readArray (){
-        int[] arr;
-        int n;
-        Scanner in = new Scanner(System.in);
-        n = in.nextInt();
-        arr = new int[n];
-        for (int i = 0; i < n; i++){
-            arr[i] = in.nextInt();
-        }
-        return arr; //при объявлении  функции мы уже указали, что возвращаем массив
+        Person vlad = new Person("Lusy");
+        System.out.print(vlad.name + ' ' + vlad.height);
     }
 }
