@@ -3,22 +3,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //int name;//переменная
-        int[] name1;// создание массива
-        int[] name2 = new int[5];//создание массива и выдеение памяти
-        int[] name3 = new int[] {23,14,56};
-        float[] name4 = new float[]{23.6f,45.8f};
-       // System.out.print(name4[0]);
+        //двумерные массивы имеют вид {{12.5f,34.5f},{12.5f,34.5f}};
+        float[][] arr = new float[2][2];
+        arr[0][0] = 12.5f;
 
-        int[] a;
-        int n;
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter number of array: ");
-        n = in.nextInt();
-        a = new int [n];//веделяем память под массив в котором будет содержаться n элементов
-        for (int i = 0; i<n; i++){
-            System.out.print("Enter a[" + i + "] = ");
-            a[i] = in.nextInt();
+        char[][] arr2 = new char[3][3];
+        arr2[0][0] = 'C';
+
+        System.out.print(arr[0][0]);
+        char[][] arr3 = new char[3][3];
+        for (int i = 0; i < arr.length; i++){
+            arr3[i] = new char[3];
         }
+        arr3[0][0] = 'C';
+        System.out.print(arr3[0][0]);
     }
 }
