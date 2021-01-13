@@ -10,6 +10,17 @@ public class Main {
         System.out.println(vitya.name + "\'s height is " + vitya.height);
 
         Person vlad = new Person("Lusy");
-        System.out.print(vlad.name + ' ' + vlad.height);
+        System.out.println(vlad.name + ' ' + vlad.height);
+
+        Student freshman = new Student(200,"Gary", 1);
+        System.out.println(freshman.name);
+        System.out.println(freshman.height);
+        System.out.println(freshman.course);
+
+        Student man = new Student (160, "Vlad", 5);
+        man.tell();
+
+        Child smallBoy = new Child(100, "Max", "Sun", "Lora Mak");
+        System.out.print(smallBoy.kindergarden);
     }
 }
