@@ -2,8 +2,24 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
+    public static int summ (int a, int b){
+        return a + b;
+    }
+
+    public static int summ (int a, int b, int c){
+        return a + b + c;
+    }
+
+    public static float summ (float a, float b){
+        return a + b;
+    }
+
     public static void main(String[] args) {
-       /* Person vitya = new Person(120, "Vitya");
+        System.out.println(summ(24,7));
+        System.out.println(summ(24,7, 5));
+        System.out.println(summ(24.77f,7.13f));
+
+        /* Person vitya = new Person(120, "Vitya");
         vitya.say("George");
         System.out.println(vitya.name + "\'s height is " + vitya.height);
 
@@ -38,7 +54,9 @@ public class Main {
             }
         };*/
 
-        Shape circle = new Circle();
-        circle.draw();
+       /* Shape circle = new Circle();
+        circle.draw();*/
+
+
     }
 }
