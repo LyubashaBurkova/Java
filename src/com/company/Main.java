@@ -31,11 +31,14 @@ public class Main {
         comp.i7.shutdown();
         comp.transfer.start();*/
 
-        new Computer(){
+       /* new Computer(){
             void superComp (){
                 this.i7.shutdown();
                 this.transfer.start();
             }
-        };
+        };*/
+
+        Shape circle = new Circle();
+        circle.draw();
     }
 }

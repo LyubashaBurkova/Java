@@ -1,5 +1,10 @@
 package com.company;
 
-public class Shape {
-    public void draw (){}
+public abstract class Shape {
+    //создаем абстарактный метод, который будет реализован в классах наследниках.
+    //абстрактный класс не может иметь объект
+    //если будем использовать абстрактные методы, то са класс тоже должен быть абстрактным
+    //public void draw (){}
+
+    abstract public void draw ();
 }
