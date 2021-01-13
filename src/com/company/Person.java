@@ -1,11 +1,18 @@
 package com.company;
 
 public class Person {
-    public int height = 180;
+    public static int height = 180;
     public String name = "Default";
 
-    public void say (String name){
+    //если метод static то к нему можно обратиться не создавая объектк,
+    // но при этом если мы внесем изменения, то они повлияут на сам метод
+    public void say1 (String name){
         System.out.println("Hello, " + name);
+    }
+
+    public static String say2 (String name){
+        System.out.println("Hello, " + name);
+        return name;
     }
 
     //конструктор 1

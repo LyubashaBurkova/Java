@@ -2,7 +2,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
-    public static int summ (int a, int b){
+    /*public static int summ (int a, int b){
         return a + b;
     }
 
@@ -12,12 +12,35 @@ public class Main {
 
     public static float summ (float a, float b){
         return a + b;
-    }
+    }*/
 
     public static void main(String[] args) {
-        System.out.println(summ(24,7));
+        Array a = new MyArray();
+        System.out.println(a.Add(3));
+        System.out.println(a.Add(30));
+        System.out.println(a.Add(31));
+        System.out.println(a.Add(32));
+        System.out.println(a.Add(33));
+        System.out.println(a.Add(28));
+        System.out.println(a.Get(4));
+        System.out.println("________________________");
+
+        Array b = new Array_1();
+        System.out.println(b.Add(3));
+        System.out.println(b.Add(43));
+        System.out.println(b.Add(35));
+        System.out.println(b.Get(2));
+        //мы можем обращатся к методу без создания экземпляра
+        /* String str = Person.say2("Max");
+        Person.height = 200;
+
+        Person vlad = new Person();
+        System.out.println(vlad.height);*/
+
+
+        /*System.out.println(summ(24,7));
         System.out.println(summ(24,7, 5));
-        System.out.println(summ(24.77f,7.13f));
+        System.out.println(summ(24.77f,7.13f));*/
 
         /* Person vitya = new Person(120, "Vitya");
         vitya.say("George");
