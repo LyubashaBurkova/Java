@@ -21,9 +21,21 @@ public class Main {
         Child smallBoy = new Child(100, "Max", "Sun", "Lora Mak");
         System.out.print(smallBoy.kindergarden);*/
 
-        Shape[] arr = new Shape []{new Circle(), new Square(), new Triangle()};
+       /* Shape[] arr = new Shape []{new Circle(), new Square(), new Triangle()};
         for (int i = 0; i < arr.length; i++){
             arr[i].draw();
-        }
+        }*/
+
+        /*Computer comp = new Computer();
+        comp.i7.start();
+        comp.i7.shutdown();
+        comp.transfer.start();*/
+
+        new Computer(){
+            void superComp (){
+                this.i7.shutdown();
+                this.transfer.start();
+            }
+        };
     }
 }
