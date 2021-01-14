@@ -15,7 +15,10 @@ public class Main {
     }*/
 
     public static void main(String[] args) {
-        Array a = new MyArray();
+        SimpleGUI app = new SimpleGUI();
+        app.setVisible(true);
+
+        /*Array a = new MyArray();
         System.out.println(a.Add(3));
         System.out.println(a.Add(30));
         System.out.println(a.Add(31));
@@ -29,7 +32,7 @@ public class Main {
         System.out.println(b.Add(3));
         System.out.println(b.Add(43));
         System.out.println(b.Add(35));
-        System.out.println(b.Get(2));
+        System.out.println(b.Get(2));*/
         //мы можем обращатся к методу без создания экземпляра
         /* String str = Person.say2("Max");
         Person.height = 200;
